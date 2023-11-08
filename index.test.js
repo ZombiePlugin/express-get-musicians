@@ -7,6 +7,7 @@ const request = require("supertest");
 const { db } = require("./db/connection");
 const { Musician } = require("./models/index");
 const app = require("./src/app");
+const musicianRouter = require("./routes/musicians");
 const seedMusician = require("./seedData");
 
 describe("./musicians endpoint", () => {
